@@ -1,0 +1,12 @@
+{% load render_bundle from webpack_loader %}
+<!doctype html>
+<html lang='en'>
+<head>
+    <title>the new app</title>
+    <meta charset='utf-8'/>
+    <link rel='stylesheet' href='/app/js/tooth.css' />
+</head>
+<body>
+    <div id='app'></div>
+    {% render_bundle 'main' %}
+</body>
